@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="神戸大学情報知能工学科 2015年前期 言語工学 講義ページ">
+    <meta name="author" content="Takatori">
+    <title>言語工学 - レポート課題</title>
+    <link rel="stylesheet" href="./LE.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="header">
+	<h1>言語工学 講義ページ　-2015年度 前期-</h1>
+	<a href="./index.html">言語工学top</a> &gt レポート課題2
+      </div>	
+
+      <div class="main">
+	<hr>	
+
+	<div class="menu">
+	  <object onload="loads(this, 'menubody')" type="text/html" width="270px" data="menu.html"></object>	
+	</div>
+	
+	<div class="contents">
+	  <h3>4. レポート課題</h3>
+
+	  <!-- 課題2 -->
+	  <a name="kadai2"><h3>課題２（2015/07/09）</h3></a>
+	  
+	  <p class="width600">
+	    <h4 class="caution">提出期限：2015/08/06(期末試験時，試験会場で回収)</h4><br>
+            課題２には 問１と問２があります．問１は環境テストのプログラムを拡張する形で比較的簡単に完成できると思います．
+	    問２は問１に比べてプログラムの規模が大きくなるため，少し手間がかかるかもしれません．
+	    考え方は問１と同じなので，ぜひ挑戦してみてください．
+
+	  </p>
+	  
+          <br><br>
+	  
+          <!-- 問1 -->
+          <b>【問１】</b><br>
+	  <p class="width600">
+	    <ol class="width550">
+    	      <li>
+		まずは，<a href="./test2.html">環境テスト（yacc / bison）</a>で yacc または bison が使えることを確認して下さい．<br><br>
+	      </li>
+              <li>
+		環境テストでは，if文の規則に基いて，<strong>if文</strong> が解析可能なプログラムを作りました．<br><br>
+		　if文の規則：<a href="./doc/if_rule.txt" target="_blank"><img src="./figs/ico_file2a_4.gif"> if_rule.txt</a><br><br>
+		
+		このソースコードを参考にして，<strong>if文，while文，関数</strong> が解析可能なyaccとlexのプログラムを作って下さい．<br><br>
+		　if文，while文，関数の規則：<a href="./doc/kadai2_rule.txt" target="_blank"><img src="./figs/ico_file2a_4.gif"> kadai2_rule.txt</a><br><br>
+		
+		ここで，規則に登場するトークン（LEFT_PARENTHESIS，SEMICOLON，など）はlexからreturnされる文字列です．
+		よって規則に登場するトークンをreturnするようなlexのプログラムと，規則を実装したyaccのプログラムを作る必要があります．<br>
+              </li><br>
+              <li>
+		プログラムが完成したら，下記に添付した解析対象のcプログラム（kadai2_input.c）を入力としてプログラムを実行し，結果を確かめて下さい．<br><br>
+		　課題２ 入力ファイル：<a href="./src/kadai2_input.c" target="_blank"><img src="./figs/ico_file2a_4.gif"> kadai2_input.c</a>
+              </li>
+	    </ol>
+	    <span style="color:red;">
+	      ※7/10追記<br>
+	      kadai2_rule.txt内に，DOUBLE型とREAL型の両方が存在するが，その見分けはどうするのかという指摘がありました．
+	      両型の区別は課題として意図したものではないため，REAL型に統一します．<br>
+	      kadai2_rule.txtファイルを変更したので，既にダウンロードした人は改めてダウンロードするか，もしくはkadai2_rule.txtの"TERM"の行を以下のように変更してください．
+	      <pre class="code" title="kadai2_rule_19">TERM -> NUMBER_INT | NUMBER_HEX | NUMBER_REAL | IDENTIFIER</pre>
+	    </span>
+	    <span style="color:blue;">
+	      ※8/2追記<br>
+	      よくあるミスについて 1<br>
+	      質問を受け付ける中でよく見かけるミスについて追記します．<br>
+	      環境テストでのif文と，課題でのif文は少し扱いが違います．
+	      環境テストでは，if文を判別することができるとそこで解析終了であり，それ以上解析を進める必要がありません．
+	      しかし，課題ではif文"IF_STATEMENT"を解析できたら，それを上位の"STATEMENT"に渡す必要があります．
+	      従って，環境テストの"IF_STATEMENT"の部分は流用できますが，そのままでは解析が途中で止まってしまうことになります．<br>
+	      この点に注意してプログラムを書いてみてください．
+	    </span>
+	    <br>
+	  </p>	  
+	  <br><br>
+
+	  <!-- 問2 -->
+	  <b>【問２】</b><br>
+	  <p class="width600">
+            tinyC または microC のどちらか１つを解析するプログラムを作成して下さい．<br>
+            規則はそれぞれ下記のPDFで定義されています．<br><br>
+            　<a href="./doc/tinyC.pdf" target="_blank"><img src="./figs/ico_file2a_4.gif"> tinyC.pdf</a>
+            　<a href="./doc/microC.pdf" target="_blank"><img src="./figs/ico_file2a_4.gif"> microC.pdf</a>
+            <br><br>
+            ※このPDF中では， (，if，!= のようなトークンがそのままの形で書かれています．それぞれ問１と同様にlexで適切な文字列をreturnしてください．例えば， ( が登場したらlexで LEFT_PARENTHESIS とreturnするといった具合です．<br>
+	    <span style="color:red;">
+	      <a name="kakko"></a>※tinyC の定義中に登場する二重大括弧や細字大括弧は0回以上の繰り返しを表しています．正規表現の*に相当するものです．<br>
+	      一方で，太字の大括弧
+	      (&lt;declarator&gt;と&lt;variable&gt;の行にあるもの)
+	      はトークンとしての大括弧を表しています．<br>
+	    </span>
+	    少々違いが分かりにくくて恐縮ですが，区別していただきますようお願いします．<br><br>
+            問２を完成させるためには少なくとも，字句解析のためのlexプログラム，構文解析のためのyaccプログラム，実験のための入力ファイル（Cプログラム）を作成する必要があります．<br>
+            lexのプログラムは課題１で作成したものが参考になると思います．<br>
+	    <br>
+	    <span style="color:blue;">
+	      ※8/2追記<br>
+	      よくあるミスについて 2<br>
+	      microCを選択した人のプログラムで，よく見かけるミスについて追記します．
+	      microCの場合，tinyCとは違い，εの判定が存在します．
+	      この判定を行う時は，以下の(1)の様に空欄にしてください(中括弧の中身は省略しています．)
+	    </span>
+	      <pre class="code" title="ex_microC_epsilon">
+FORMAL_PARAMETER_LIST
+: PARAMETER_LIST
+{
+      ～～
+}
+|　　　　　　　　(1)
+{
+      ～(2)～
+}
+	      </pre>
+	    <span style="color:blue;">
+	      また，(2)の部分で，何も返さない場合($$=copy(～);がない場合)，上に解析結果を返すことができないため，動作がおかしくなります．
+	      空文字を返してあげてください．     
+	    </span>
+	    <br>
+
+	  </p>
+
+	  
+	</div>	  
+      </div>
+
+      <footer>
+	言語工学 2015<br>
+	[<a href="http://www.ai.cs.kobe-u.ac.jp/">CS24 上原研究室</a>]
+      </footer>
+    </div>
+    
+    <script>
+    function loads(obj, id){
+      var Height = obj.contentDocument.getElementById(id).offsetHeight;
+      obj.style.height = Height + 50 + "px";
+    }
+    </script>
+  </body>
+</html>
