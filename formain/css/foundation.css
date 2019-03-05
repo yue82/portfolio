@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu);
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 .footer{
     color: #dddddd;
@@ -1188,7 +1188,8 @@ button, .button {
     border-style: solid;
     border-width: 0;
     cursor: pointer;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-weight: normal;
     line-height: normal;
     margin: 0 0 1.25rem;
@@ -1878,7 +1879,8 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
     color: #FFFFFF;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-size: 0.8125rem;
     font-weight: normal;
     padding-left: 0.9375rem;
@@ -2880,7 +2882,8 @@ meta.foundation-mq-topbar {
 .pricing-table .title {
     background-color: #333333;
     color: #EEEEEE;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-size: 1rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -2888,7 +2891,8 @@ meta.foundation-mq-topbar {
 .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-size: 2rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -3178,7 +3182,8 @@ meta.foundation-mq-topbar {
     display: block;
     background-color: #EFEFEF;
     color: #222222;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-size: 1rem;
     padding: 1rem 2rem; }
 .tabs dd > a:hover,
@@ -3296,7 +3301,8 @@ ul.pagination li {
 
 .side-nav {
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     list-style-position: outside;
     list-style-type: none;
     margin: 0;
@@ -3317,7 +3323,8 @@ ul.pagination li {
     color: #acacac; }
 .side-nav li.active > a:first-child:not(.button) {
     color: #acacac;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-weight: normal; }
 .side-nav li.divider {
     border-top: 1px solid;
@@ -3347,7 +3354,8 @@ ul.pagination li {
     background: #EFEFEF;
     color: #222222;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-size: 1rem;
     padding: 1rem; }
 .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -4251,7 +4259,8 @@ blockquote p {
 .sub-nav li {
     color: #999999;
     float: left;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    font-family: 'Ubuntu','Noto Sans Japanese';
     font-size: 0.875rem;
     font-weight: normal;
     margin-left: 1rem;
