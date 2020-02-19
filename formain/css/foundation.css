@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 .footer{
-    color: #dddddd;
+    color: #999999;
     font-family: 'Ubuntu','Noto Sans Japanese';
     font-style: normal;
     font-size:80%;
@@ -11,11 +11,11 @@
 
 a.foot,
 a.foot:visited {
-    color: #dddddd;
+    color: #999999;
     text-decoration: none; 
 }
 a.foot:hover, a.foot:focus {
-    color: #757575; }
+    color: #dddddd; }
 
 
 meta.foundation-version {
@@ -2759,7 +2759,7 @@ meta.foundation-mq-topbar {
     border-width: 0px;
     border-color: #686868;
     margin-bottom: 0.9375em;
-    padding: 1rem;
+    padding: 2rem;
     background: #dddddd;
     color: #232323; }
 .panelinner{
@@ -3572,19 +3572,19 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     line-height: 0; }
 
 h1 {
-    font-size: 2.125rem; }
-
-h2 {
     font-size: 1.6875rem; }
 
-h3 {
+h2 {
     font-size: 1.375rem; }
+
+h3 {
+    font-size: 1.125rem; }
 
 h4 {
     font-size: 1.125rem; }
 
 h5 {
-    font-size: 1.125rem; }
+    font-size: 1rem; }
 
 h6 {
     font-size: 1rem; }
@@ -3743,22 +3743,23 @@ blockquote p {
 	line-height: 1.4; }
 
     h1 {
-	font-size: 2.75rem; }
+        font-size: 2.125rem; }
 
     h2 {
-	font-size: 2.3125rem; }
+        font-size: 1.6875rem; }
 
     h3 {
-	font-size: 1.6875rem; }
+        font-size: 1.375rem; }
 
     h4 {
-	font-size: 1.4375rem; }
+        font-size: 1.125rem; }
 
     h5 {
-	font-size: 1.125rem; }
+        font-size: 1.125rem; }
 
     h6 {
-	font-size: 1rem; } }
+        font-size: 1rem; }
+}
 .split.button {
     position: relative;
     padding-right: 5.0625rem; }
