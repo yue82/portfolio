@@ -3668,6 +3668,24 @@ ul.disc {
 ul.no-bullet {
     list-style: none; }
 
+.gray li {
+    list-style-type: none;
+    position: relative;
+    margin-left: -0.6em;
+    padding-left: 0.6em;
+    }
+.gray li:before {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    content: "";
+    background: #666666;
+    }
+
 /* Ordered Lists */
 ol {
     margin-left: 1.4rem; }
