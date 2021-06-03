@@ -4464,7 +4464,7 @@ blockquote p {
 .label {
     display: inline-block;
     font-family: 'Ubuntu','Noto Sans Japanese';
-    font-weight: lighter;
+    font-weight: normal;
     line-height: 1;
     margin-bottom: 4px;
     position: relative;
