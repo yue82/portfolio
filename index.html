@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>portfolio - ruako takatori</title>
+        <title>portfolio - takatori ruako</title>
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="img/android-chrome-256x256.png">
@@ -48,21 +48,38 @@
                 <div class="panel" id="topics">
                     <div class="row">
                         <h2>Topics</h2>
-                        <p class="label">Video Codec</p>
-                        <p class="label">Video Streaming</p>
-                        <p class="label">Data Mining</p>
-                    </div>
-                    <div class="row">
-                        <p class="secondary label">Bike</p>
-                        <p class="secondary label">Trombone</p>
-                        <p class="secondary label">Reading</p>
-                        <p class="secondary label">Emacs</p>
-                    </div>
-                    <div class="row">
-                        <a href="#" data-reveal-id="bike"><img class="th" src="img/PA091092-sq.jpg" width="120px" height="120px"></a><img id="bike" class="reveal-modal" data-reveal aria-labelledby="YB125SP" aria-hidden="true" role="dialog" src="img/PA091092.jpg">
-                        <img class="th" src="img/DSC_7942_sq.jpg" width="120px" height="120px">
-                        <img class="th" src="img/DSC_5832_sq.jpg" width="120px" height="120px">
-                        <a href="#" data-reveal-id="emacs"><img class="th" src="img/emacs_sq.png" width="120px" height="120px"></a><img id="emacs" class="reveal-modal" data-reveal aria-labelledby="MyEmacs" aria-hidden="true" role="dialog" src="img/emacs.png">
+                        <div class="divatt">
+                            <p class="label">Video Codec</p>
+                            <p class="label">Video Streaming</p>
+                            <p class="label">Data Mining</p>
+                            <br>
+                            <p class="secondary label">Bike</p>
+                            <p class="secondary label">Trombone</p>
+                            <p class="secondary label">Reading Books</p>
+                            <p class="secondary label">Emacs</p>
+                            <br>
+                            <a href="#" data-reveal-id="bike"><img class="th" src="img/PA091092-sq.jpg" width="120px" height="120px"></a>
+                            <a href="#" data-reveal-id="trombone"><img class="th" src="img/DSC_7942_sq.jpg" width="120px" height="120px"></a>
+                            <a href="#" data-reveal-id="reading_books"><img class="th" src="img/DSC_5832_sq.jpg" width="120px" height="120px"></a>
+                            <a href="#" data-reveal-id="emacs"><img class="th" src="img/emacs_sq.png" width="120px" height="120px"></a>
+                        </div>
+
+                        <div id="bike" class="reveal-modal" data-reveal aria-labelledby="YB125SP" aria-hidden="true" role="dialog">
+                            <p>YB125SP</p>
+                            <img src="img/PA091092.jpg">
+                        </div>
+                        <div id="trombone" class="reveal-modal" data-reveal aria-labelledby="YSL-456G" aria-hidden="true" role="dialog">
+                            <p>YSL-456G</p>
+                            <img src="img/DSC_5181-sq.jpg">
+                        </div>
+                        <div id="reading_books" class="reveal-modal" data-reveal aria-labelledby="reading" aria-hidden="true" role="dialog">
+                            <p><a target="_blank" href="https://twitter.com/search?q=%22%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%22%20OR%20%22%E3%82%92%E8%AA%AD%E3%81%BF%22%20from%3A%40yue_roo"> ===> Twitter</a></p>
+                            <img src="img/PXL_20210615_150541751.jpg">
+                        </div>
+                        <div id="emacs" class="reveal-modal" data-reveal aria-labelledby="MyEmacs" aria-hidden="true" role="dialog">
+                            <p><a target="_blank" href="https://yuelab82.hatenablog.com/archive/category/emacs"> ===> Blog</a></p>
+                            <img src="img/emacs.png">
+                        </div>
                     </div>
                 </div>
 
@@ -70,7 +87,12 @@
                     <div class="row">
                         <h2>Contact</h2>
                         <div class="divatt">
-                            no.82.vuf.lab[at]gmail.com
+                            <p>no.82.vuf.lab[at]gmail.com</p>
+                            <a target="_blank" href="https://github.com/yue82"><img src="img/fi-social-github.svg" alt="Github" width="40px" height="40px"></a>
+                            <a target="_blank" href="http://yuelab82.hatenablog.com/"><img src="img/fi-pen.svg" alt="Blog" width="32px" height="32px"></a>
+                            <a target="_blank" href="https://twitter.com/yue_roo"><img src="img/fi-social-twitter.svg" alt="Twitter" width="40px" height="40px"></a>
+                            <a target="_blank" href="https://www.facebook.com/tori.taka.148"><img src="img/fi-social-facebook.svg" alt="Facebook" width="40px" height="40px"></a>
+                            <a target="_blank" href="https://www.amazon.jp/hz/wishlist/ls/3J044K4IJW2T8?ref_=wl_share"><img src="img/fi-social-amazon.svg" alt="Facebook" width="40px" height="40px"></a>
                         </div>
                     </div>
                 </div>
@@ -79,55 +101,46 @@
                     <div class="row">
                         <h2>Skills</h2>
                         <div class="divatt">
-                            <h4>Languages</h4>
-                            <p class="label">C</p>
-                            <p class="label">C++</p>
-                            <p class="label">Python</p>
-                            <p class="label">VerilogHDL</p>
-                            <p class="label">Erlang</p>
-                            <p class="label">ShellScript</p>
-                            <p class="secondary label">Java</p>
-                            <p class="secondary label">HTML/CSS</p>
-                        </div>
-                        <div class="divatt">
-                            <h4>Skills</h4>
-                            <p class="label">H.264/AVC</p>
-                            <p class="label">H.265/HEVC</p>
-                            <p class="label">AV1</p>
-                            <p class="label">Data Mining</p>
-                            <p class="secondary label">H.266/VVC</p>
-                            <p class="secondary label">isobmff</p>
-                            <p class="secondary label">Video Streaming</p>
-                            <p class="secondary label">Network</p>
-                            <p class="secondary label">Hobby Electronics</p>
-                            <p class="secondary label">CTF</p>
-                        </div>
-                        <div class="divatt">
-                            <h4>Licenses</h4>
-                            <p class="secondary label">FE (2012)</p>
-                            <p class="secondary label">AP (2012)</p>
-                            <p class="secondary label">ES (2013)</p>
-                            <p class="secondary label">SC (2015,2019)</p>
-                            <p class="secondary label">NW (2015)</p>
-                            <p class="secondary label">DB (2016)</p>
-                            <p class="secondary label">統計検定2級 (2016)</p>
-                            <p class="secondary label">電気通信工事担任者 DD1 (2017)</p>
-                            <p class="secondary label">第二種電気工事士 (2019)</p>
-                            <p class="secondary label">日商簿記3級 (2021)</p>
-                            <p class="secondary label">DL for GENERAL 2021#1</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel" id="links">
-                    <div class="row">
-                        <h2>Links</h2>
-                        <div class="divatt">
-                            <a href="https://github.com/yue82"><img src="img/fi-social-github.svg" alt="Github" width="40px" height="40px"></a>
-                            <a href="http://yuelab82.hatenablog.com/"><img src="img/fi-pen.svg" alt="Blog" width="32px" height="32px"></a>
-                            <a href="https://twitter.com/yue_roo"><img src="img/fi-social-twitter.svg" alt="Twitter" width="40px" height="40px"></a>
-                            <a href="https://www.facebook.com/tori.taka.148"><img src="img/fi-social-facebook.svg" alt="Facebook" width="40px" height="40px"></a>
-                            <a href="https://www.amazon.jp/hz/wishlist/ls/3J044K4IJW2T8?ref_=wl_share"><img src="img/fi-social-amazon.svg" alt="Facebook" width="40px" height="40px"></a><br>
+                            <div>
+                                <h4>Languages</h4>
+                                <p class="label">C</p>
+                                <p class="label">C++</p>
+                                <p class="label">Python</p>
+                                <p class="label">VerilogHDL</p>
+                                <p class="label">Erlang</p>
+                                <p class="label">ShellScript</p>
+                                <p class="secondary label">Java</p>
+                                <p class="secondary label">HTML/CSS</p>
+                            </div>
+                            <br>
+                            <div>
+                                <h4>Skills</h4>
+                                <p class="label">H.264/AVC</p>
+                                <p class="label">H.265/HEVC</p>
+                                <p class="label">AV1</p>
+                                <p class="label">Data Mining</p>
+                                <p class="secondary label">H.266/VVC</p>
+                                <p class="secondary label">isobmff/mp4</p>
+                                <p class="secondary label">Video Streaming</p>
+                                <p class="secondary label">Network</p>
+                                <p class="secondary label">Hobby Electronics</p>
+                                <p class="secondary label">CTF</p>
+                            </div>
+                            <br>
+                            <div>
+                                <h4>Licenses</h4>
+                                <p class="secondary label">FE (2012)</p>
+                                <p class="secondary label">AP (2012)</p>
+                                <p class="secondary label">ES (2013)</p>
+                                <p class="secondary label">SC (2015,2019)</p>
+                                <p class="secondary label">NW (2015)</p>
+                                <p class="secondary label">DB (2016)</p>
+                                <p class="secondary label">統計検定2級 (2016)</p>
+                                <p class="secondary label">電気通信工事担任者 DD1 (2017)</p>
+                                <p class="secondary label">第二種電気工事士 (2019)</p>
+                                <p class="secondary label">日商簿記3級 (2021)</p>
+                                <p class="secondary label">DL for GENERAL 2021#1</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +153,7 @@
                         <div class="divatt">
                             <ul class="gray">
                                 <li>2015.03 神戸大学 情報知能工学科 卒業</li>
-                                <li>2017.03 神戸大学 システム情報学研究科 <a href="http://www.ai.cs.kobe-u.ac.jp/">上原研究室</a> 博士前期課程 修了</li>
+                                <li>2017.03 神戸大学 システム情報学研究科 <a target="_blank" href="http://www.ai.cs.kobe-u.ac.jp/">上原研究室</a> 博士前期課程 修了</li>
                                 <li>2017.04～ 株式会社ドワンゴ</li>
                             </ul>
                         </div>
@@ -151,31 +164,45 @@
                     <div class="row">
                         <h2>Works</h2>
                         <div class="divatt">
-                            <h4>Publications</h4>
-                            <ul class="gray">
-                                <li><a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_action_common_download&item_id=164322&item_no=1&attribute_id=1&file_no=1">多次元時系列データにおけるオンラインでのモチーフ発見手法の検討</a>
-                                    <div class="divatt"><a href="http://www.ipsj.or.jp/event/taikai/77/index.html">情報処理学会 第77回全国大会</a> (2015.03)</div></li>
-                                <li><a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2015/0/JSAI2015_3C45/_article/-char/ja/">オンライン処理による多次元時系列データのモチーフ長を考慮したモチーフ発見</a>
-                                    <div class="divatt"><a href="http://www.ai-gakkai.or.jp/jsai2015/">人工知能学会全国大会(第29回)</a> (2015.06) </div></li>
-                                <li>(<a href="https://jphysiolanthropol.biomedcentral.com/articles/10.1186/s40101-020-00234-w">Useful parameters for the motion analysis of facial skin care in Japanese women</a>)
-                                    <div class="divatt"><a href="https://jphysiolanthropol.biomedcentral.com/">Journal of Physiological Anthropology</a> 39 (2020)</div></li>
-                            </ul>
+                            <div>
+                                <h4>Publications</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_action_common_download&item_id=164322&item_no=1&attribute_id=1&file_no=1">多次元時系列データにおけるオンラインでのモチーフ発見手法の検討</a>
+                                        <div class="divatt"><a target="_blank" href="http://www.ipsj.or.jp/event/taikai/77/index.html">情報処理学会 第77回全国大会</a> (2015.03)</div></li>
+                                    <li><a target="_blank" href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2015/0/JSAI2015_3C45/_article/-char/ja/">オンライン処理による多次元時系列データのモチーフ長を考慮したモチーフ発見</a>
+                                        <div class="divatt"><a target="_blank" href="http://www.ai-gakkai.or.jp/jsai2015/">人工知能学会全国大会(第29回)</a> (2015.06) </div></li>
+                                </ul>
+                            </div>
                             <br>
-                            <h4>Lightning Talk</h4>
-                            <ul class="gray">
-                                <li><a href="https://www.slideshare.net/RooTakatori/av1-138429446">AV1リアルタイムハードウェアエンコーダ</a>
-                                    <div class="divatt"><a href="https://streaming-lab.connpass.com/event/121623/">Streaming Conference #6</a> (2019.03)</div></li>
-                            </ul>
+                            <div>
+                                <h4>Theses</h4>
+                                <ul class="gray">
+                                    <li>オンライン処理による多次元時系列データからのモチーフ発見
+                                        <div class="divatt">卒業論文，卒業論文発表会 (2015.02)</div></li>
+                                    <li>近似エントロピーと運動エネルギー用いた身体運動の感性評価
+                                        <div class="divatt">修士論文，修士論文公聴会 (2017.02)</div></li>
+                                </ul>
+                            </div>
                             <br>
-                            <h4>at Dwango</h4>
-                            <ul class="gray">
-                                <li>H.264 ハードウェアエンコーダ開発 (2017.10～2018.01)
-                                    <div class="divatt">コスト計算の実装を担当</div></li>
-                                <li><a href="https://dwango.github.io/articles/av1hwencoder/">AV1 ハードウェアエンコーダ開発</a> (2018.02～2019.03)
-                                    <div class="divatt">符号化(sw), コスト計算(hw)の設計と実装を担当</div></li>
-                                <li>ハードウェアエンコーダ関連 (2019.04～2019.12)</li>
-                                <li>配信システム関連 (2020.01～)</li>
-                            </ul>
+                            <div>
+                                <h4>at Dwango</h4>
+                                <ul class="gray">
+                                    <li>H.264 ハードウェアエンコーダ開発 (2017.10～2018.01)
+                                        <div class="divatt">コスト計算の実装を担当</div></li>
+                                    <li><a target="_blank" href="https://dwango.github.io/articles/av1hwencoder/">AV1 ハードウェアエンコーダ開発</a> (2018.02～2019.03)
+                                        <div class="divatt">符号化(sw), コスト計算(hw)の設計と実装を担当</div></li>
+                                    <li>ハードウェアエンコーダ関連 (2019.04～2019.12)</li>
+                                    <li>配信システム関連 (2020.01～)</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div>
+                                <h4>Lightning Talk</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="https://www.slideshare.net/RooTakatori/av1-138429446">AV1リアルタイムハードウェアエンコーダ</a>
+                                        <div class="divatt"><a target="_blank" href="https://streaming-lab.connpass.com/event/121623/">Streaming Conference #6</a> (2019.03)</div></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,42 +211,49 @@
                     <div class="row">
                         <h2>Other Works</h2>
                         <div class="divatt">
-                            <h4>Theses</h4>
-                            <ul class="gray">
-                                <li>オンライン処理による多次元時系列データからのモチーフ発見
-                                    <div class="divatt">卒業論文，卒業論文発表会 (2015.02)</div></li>
-                                <li>近似エントロピーと運動エネルギー用いた身体運動の感性評価
-                                    <div class="divatt">修士論文，修士論文公聴会 (2017.02)</div></li>
-                            </ul>
-                            <br>
-                            <h4>Teaching Assistant</h4>
-                            <ul class="gray">
-                                <li><a href="http://www.ai.cs.kobe-u.ac.jp/~takatori/LE">言語工学</a> (2015, 2016)</li>
-                                <li>人工知能 (2015, 2016)</li>
-                                <li>演習III (2016)</li>
-                            </ul>
-                            <br>
-                            <h4>Part Time Jobs</h4>
-                            <ul class="gray">
-                                <li><a href="http://www.synthesis.co.jp/">株式会社シンセシス</a> (2013.08～2017.03)
-                                    <div class="divatt">ソフトウェア開発, 回路製作など</div></li>
-                                <li><a href="http://www.rescuesystem.org/report/koberobotworkshop_closure/">神戸ロボット工房</a> (2012.01～2016.03)
-                                    <div class="divatt">展示補助, 講座企画など</div></li>
-                            </ul>
-                            <br>
-
-                            <h4>Application</h4>
-                            <div class="large-2 medium-2 column">
-                                <img src="img/simlogo.png" width="80px" height="80px">
+                            <div>
+                                <h4>Teaching Assistant</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="http://www.ai.cs.kobe-u.ac.jp/~takatori/LE">言語工学</a> (2015, 2016)</li>
+                                    <li>人工知能 (2015, 2016)</li>
+                                    <li>演習III (2016)</li>
+                                </ul>
                             </div>
-                            <div class="large-10 medium-10 column">
-                                <div class="divatt">
-                                    類似語検索
-                                    <div class="divatt">
-                                        授業プロジェクトにて作成<br>
-                                        自宅鯖停止のため公開終了
+                            <br>
+                            <div>
+                                <h4>Part Time Jobs</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="http://www.synthesis.co.jp/">株式会社シンセシス</a> (2013.08～2017.03)
+                                        <div class="divatt">ソフトウェア開発, 回路製作など</div></li>
+                                    <li><a target="_blank" href="http://www.rescuesystem.org/report/koberobotworkshop_closure/">神戸ロボット工房</a> (2012.01～2016.03)
+                                        <div class="divatt">展示補助, 講座企画など</div></li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div>
+                                <h4>Application</h4>
+                                <div class="row divatt">
+                                    <div class="large-2 medium-2 column">
+                                        <img src="img/simlogo.png" width="80px" height="80px">
+                                    </div>
+                                    <div class="large-10 medium-10 column">
+                                        <div>
+                                            類似語検索
+                                            <div class="divatt">
+                                                授業プロジェクトにて作成<br>
+                                                自宅鯖停止のため公開終了
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <br>
+                            <div>
+                                <h4>Publications Related to Me</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="https://jphysiolanthropol.biomedcentral.com/articles/10.1186/s40101-020-00234-w">Useful parameters for the motion analysis of facial skin care in Japanese women</a>
+                                        <div class="divatt"><a target="_blank" href="https://jphysiolanthropol.biomedcentral.com/">Journal of Physiological Anthropology</a> 39 (2020)</div></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -229,46 +263,67 @@
                     <div class="row">
                         <h2>Event Activities</h2>
                         <div class="divatt">
-                            <h4>Core Staff</h4>
-                            <ul class="gray">
-                                <li><a href="http://wiki.nicotech.jp/nico_tech/index.php?%E6%97%A5%E6%9C%AC%E6%A9%8B%E3%82%82%E3%81%AE%E3%81%A5%E3%81%8F%E3%82%8A%E3%81%BE%E3%81%A4%E3%82%8AMAID%20Ver.%200.8">日本橋ものづくりまつり</a> (2012.01)</li>
-                                <li><a href="http://wiki.nicotech.jp/nico_tech/index.php?%E5%A4%A7%E9%98%AA%20MAID%20ver0.9">大阪MAID</a> (2012.07)</li>
-                                <li><a href="https://streaming-lab.connpass.com/">Streaming Conference</a> (2018.02～)</li>
-                            </ul>
+                            <div>
+                                <h4>Core Staff</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="http://wiki.nicotech.jp/nico_tech/index.php?%E6%97%A5%E6%9C%AC%E6%A9%8B%E3%82%82%E3%81%AE%E3%81%A5%E3%81%8F%E3%82%8A%E3%81%BE%E3%81%A4%E3%82%8AMAID%20Ver.%200.8">日本橋ものづくりまつり</a> (2012.01)</li>
+                                    <li><a target="_blank" href="http://wiki.nicotech.jp/nico_tech/index.php?%E5%A4%A7%E9%98%AA%20MAID%20ver0.9">大阪MAID</a> (2012.07)</li>
+                                    <li><a target="_blank" href="https://streaming-lab.connpass.com/">Streaming Conference</a> (2018.02～)</li>
+                                </ul>
+                            </div>
                             <br>
-                            <h4>Network Staff</h4>
-                            <ul class="gray">
-                                <li><a href="https://iosdc.jp/2018/">iOSDC Japan 2018</a> (<a href="http://yuelab82.hatenablog.com/entry/iosdcjp_2018_noc">Blog</a>)</li>
-                                <li><a href="https://codeblue.jp/2018/en/">Code Blue 2018</a></li>
-                                <li><a href="https://droidkaigi.jp/2019/">DroidKaigi 2019</a></li>
-                                <li><a href="https://iosdc.jp/2019/">iOSDC Japan 2019</a> (<a href="https://yuelab82.hatenablog.com/entry/iosdc2019_heatmap_video">Blog</a>)</li>
-                                <li><a href="https://codeblue.jp/2019/en/">Code Blue 2019</a></li>
-                            </ul>
+                            <div>
+                                <h4>Network Staff</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="https://iosdc.jp/2018/">iOSDC Japan 2018</a> (<a target="_blank" href="http://yuelab82.hatenablog.com/entry/iosdcjp_2018_noc">Blog</a>)</li>
+                                    <li><a target="_blank" href="https://codeblue.jp/2018/en/">Code Blue 2018</a></li>
+                                    <li><a target="_blank" href="https://droidkaigi.jp/2019/">DroidKaigi 2019</a></li>
+                                    <li><a target="_blank" href="https://iosdc.jp/2019/">iOSDC Japan 2019</a> (<a target="_blank" href="https://yuelab82.hatenablog.com/entry/iosdc2019_heatmap_video">Blog</a>)</li>
+                                    <li><a target="_blank" href="https://codeblue.jp/2019/en/">Code Blue 2019</a></li>
+                                </ul>
+                            </div>
                             <br>
-                            <h4>Staff</h4>
-                            <ul class="gray">
-                                <li><a href="https://iosdc.jp/2020/">iOSDC Japan 2020</a></li>
-                                <li><a href="https://phperkaigi.jp/2021/">PHPerKaigi 2021</a></li>
-                                <li><a href="https://iosdc.jp/2021/">iOSDC Japan 2021</a></li>
-                            </ul>
+                            <div>
+                                <h4>Staff</h4>
+                                <ul class="gray">
+                                    <li><a target="_blank" href="https://iosdc.jp/2020/">iOSDC Japan 2020</a></li>
+                                    <li><a target="_blank" href="https://phperkaigi.jp/2021/">PHPerKaigi 2021</a></li>
+                                    <li><a target="_blank" href="https://iosdc.jp/2021/">iOSDC Japan 2021</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="panel" id="album">
                     <div class="row">
                         <h2>Album</h2>
-                        <a href="#" data-reveal-id="spring"><img class="th" src="img/DSC_0251_sq.jpg" width="120px" height="120px"></a><img id="spring" class="reveal-modal" data-reveal aria-labelledby="Spring" aria-hidden="true" role="dialog" src="img/DSC_0251.JPG">
-                        <a href="#" data-reveal-id="summer"><img class="th" src="img/P9032085_sq.jpg" width="120px" height="120px"></a><img id="summer" class="reveal-modal" data-reveal aria-labelledby="Summer" aria-hidden="true" role="dialog" src="img/P9032085.JPG">
-                        <a href="#" data-reveal-id="autumn"><img class="th" src="img/DSC_6719_sq.jpg" width="120px" height="120px"></a><img id="autumn" class="reveal-modal" data-reveal aria-labelledby="Autumn" aria-hidden="true" role="dialog" src="img/DSC_6719.JPG">
-                        <a href="#" data-reveal-id="winter"><img class="th" src="img/P5031571_sq.jpg" width="120px" height="120px"></a><img id="winter" class="reveal-modal" data-reveal aria-labelledby="Winter" aria-hidden="true" role="dialog" src="img/P5031571.JPG">
+                        <div class="divatt">
+                            <a href="#" data-reveal-id="spring"><img class="th" src="img/DSC_0251_sq.jpg" width="120px" height="120px"></a>
+                            <a href="#" data-reveal-id="summer"><img class="th" src="img/P9032085_sq.jpg" width="120px" height="120px"></a>
+                            <a href="#" data-reveal-id="autumn"><img class="th" src="img/DSC_6719_sq.jpg" width="120px" height="120px"></a>
+                            <a href="#" data-reveal-id="winter"><img class="th" src="img/P5031571_sq.jpg" width="120px" height="120px"></a>
+
+                            <div id="spring" class="reveal-modal" data-reveal aria-labelledby="Spring" aria-hidden="true" role="dialog">
+                                <img src="img/DSC_0251.JPG">
+                            </div>
+                            <div id="summer" class="reveal-modal" data-reveal aria-labelledby="Summer" aria-hidden="true" role="dialog">
+                                <img src="img/P9032085.JPG">
+                            </div>
+                            <div id="autumn" class="reveal-modal" data-reveal aria-labelledby="Autumn" aria-hidden="true" role="dialog">
+                                <img src="img/DSC_6719.JPG">
+                            </div>
+                            <div id="winter" class="reveal-modal" data-reveal aria-labelledby="Winter" aria-hidden="true" role="dialog">
+                                <img src="img/P5031571.JPG">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            Last Update: 2021.06.03 &nbsp; &nbsp; &nbsp;
-            Powered by <a href="http://foundation.zurb.com/" class="foot">Foundation</a> 5.5.2
+            Last Update: 2021.06.15 &nbsp; &nbsp; &nbsp;
+            Powered by <a target="_blank" href="http://foundation.zurb.com/" class="foot">Foundation</a> 5.5.2
         </div>
 
         <script src="js/vendor/jquery.js"></script>

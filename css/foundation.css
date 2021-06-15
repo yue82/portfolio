@@ -3895,7 +3895,8 @@ blockquote p {
     background-color: #FFFFFF;
     padding: 1.875rem;
     border: solid 1px #666666;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: #232323; }
 @media only screen and (max-width: 40em) {
     .reveal-modal {
 	/* min-height: 100vh; */
